@@ -1,6 +1,8 @@
 package ds;
 
-public class BasicStack<X> {
+import dsInterface.Stack;
+
+public class BasicStack<X> implements Stack<X> {
 
     private X[] data;
     private int stackpointer;
@@ -10,7 +12,7 @@ public class BasicStack<X> {
         stackpointer = 0;
     }
 
-    public void push(X newItem){
+    public void push(X newItem) {
         data[stackpointer++] = newItem;
     }
 

@@ -1,3 +1,5 @@
+package ds;
+
 public class BasicStack<X> {
 
     private X[] data;
